@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Bootstrap Toolbox Image Enlarger module.
+ */
+ 
+/**
+ * Implements hook_theme().
+ */
+function bt_enlarger_theme($existing, $type, $theme, $path) {
+  return [
+    'bt_enlarger_image' => [
+      'variables' => [
+        'normal_image_url' => NULL,
+        'enlarged_image_url' => NULL,
+        'enlarged_image_id' => NULL,
+        'settings' => [],
+      ],
+    ],
+  ];
+}

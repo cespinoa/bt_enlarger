@@ -1,0 +1,20 @@
+
+<div class="bt-enlarger-image {{ settings.wrapper }} {{ settings.wrapper_style }}">
+  <div class="{{ settings.style }}">
+        <img src={{ normal_image_url }}>
+        <a class="svg-link" data-bs-toggle="modal" href="#{{ enlarged_image_id }}" role="button"></a>
+  </div>
+
+  <div class="modal fade" id="{{ enlarged_image_id }}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src={{ enlarged_image_url }}>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

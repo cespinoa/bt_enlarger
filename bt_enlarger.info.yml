@@ -1,0 +1,8 @@
+name: 'Bootstrap Toolbox Image Enlarger'
+type: module
+description: 'Enlarge media images'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:media
+  - bootstrap_toolbox:bootstrap_toolbox
