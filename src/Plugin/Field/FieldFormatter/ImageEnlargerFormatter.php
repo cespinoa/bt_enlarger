@@ -84,7 +84,6 @@ class ImageEnlargerFormatter extends FormatterBase {
       '#default_value' => $this->getSetting('enlarged_image_style'),
       '#options' => $imageStyles,
     ];
-    //~ kint($this);
 
     return $element;
   }

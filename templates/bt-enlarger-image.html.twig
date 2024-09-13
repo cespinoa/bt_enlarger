@@ -1,7 +1,7 @@
 
 <div class="bt-enlarger-image {{ settings.wrapper }} {{ settings.wrapper_style }}">
   <div class="{{ settings.style }}">
-        <img src={{ normal_image_url }}>
+        <a data-bs-toggle="modal" href="#{{ enlarged_image_id }}"><img src={{ normal_image_url }}></a>
         <a class="svg-link" data-bs-toggle="modal" href="#{{ enlarged_image_id }}" role="button"></a>
   </div>
 
