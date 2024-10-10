@@ -114,6 +114,8 @@ class ImageEnlargerFormatter extends FormatterBase {
       $enlargedImageStyle = $this->getSetting('enlarged_image_style');
       
       $enlargedImageId = 'enlarged-image-id-' . uniqid();
+      $normalImageUrl = NULL;
+      $enlargedImageUrl = NULL;
 
       if($item->getPluginId() == 'field_item:entity_reference'){
         $mediaId = $item->target_id;
